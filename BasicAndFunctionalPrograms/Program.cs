@@ -8,7 +8,8 @@ public class Program
         bool flag = true;
         while (flag)
         {
-            Console.WriteLine("\nEnter your choice \n1.Even or Odd \n2.Factors \n3.Flip Coin \n4.Harmonic Number \n5.Largest Number \n6.Exit");
+            Console.WriteLine("\nEnter your choice \n1.Even or Odd \n2.Factors \n3.Flip Coin \n4.Harmonic Number \n5.Largest Number " +
+                "\n6.Leap Year \n7.Exit");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -32,6 +33,10 @@ public class Program
                 case 5:
                     LargestNumber largestNumber = new LargestNumber();
                     largestNumber.LargeNumber();
+                    break;
+                case 6:
+                    LeapYear leapYear = new LeapYear();
+                    leapYear.Year();
                     break;
                 default:
                     flag = false;
