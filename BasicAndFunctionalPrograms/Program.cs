@@ -9,7 +9,7 @@ public class Program
         while (flag)
         {
             Console.WriteLine("\nEnter your choice \n1.Even or Odd \n2.Factors \n3.Flip Coin \n4.Harmonic Number \n5.Largest Number " +
-                "\n6.Leap Year \n7.Power of Two \n8.Exit");
+                "\n6.Leap Year \n7.Power of Two \n8.Quotient And Remainder \n9.Exit");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -41,6 +41,10 @@ public class Program
                 case 7:
                     PowerOfTwo power = new PowerOfTwo();
                     power.Power();
+                    break;
+                case 8:
+                    QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                    quotientAndRemainder.FindValue();
                     break;
                 default:
                     flag = false;
