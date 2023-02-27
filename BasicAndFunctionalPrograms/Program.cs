@@ -8,7 +8,7 @@ public class Program
         bool flag = true;
         while (flag)
         {
-            Console.WriteLine("\nEnter your choice \n1.Even or Odd \n2.Factors \n3.Flip Coin \n4.Exit");
+            Console.WriteLine("\nEnter your choice \n1.Even or Odd \n2.Factors \n3.Flip Coin \n4.Harmonic Number \n5.Exit");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -24,6 +24,10 @@ public class Program
                 case 3:
                     FlipCoin flipCoin = new FlipCoin();
                     flipCoin.Coin();
+                    break;
+                case 4:
+                    HarmonicNumber harmonic = new HarmonicNumber();
+                    harmonic.Harmonic();
                     break;
                 default:
                     flag = false;
